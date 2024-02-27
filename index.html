@@ -1,0 +1,25 @@
+<h2>Tablas de multiplicar</h2>
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" min="1" max="10">
+        <button onclick="tabla()">calcular la tabla</button>
+        <div id="display"></div>
+    
+        <script>
+            function tabla() {
+                
+                let numero = document.getElementById("numero").value;
+                let display = document.getElementById("display");
+    
+                display.innerHTML = "";
+                
+                    for (let i = 1; i <= 10; i++) {
+                        display.innerHTML += numero + " x " + i + " = " + numero * i + "<br>";
+                    }
+                    
+                  /*  display.style.listStyleType="none";
+                    document.getElementById("resultado").style.color = "red";
+                    display.style.backgroundColor = "yellow"; */
+
+                }
+            
+        </script>
